@@ -91,3 +91,17 @@ jQuery("#toggle-search").click(function () {
         jQuery("#toggle-search").attr("src", "assets/images/search-icon.png");
     }
 });
+
+// javascript popup
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "block";
+    }, 2000); // 2000 milliseconds = 2 seconds
+});
+
+let div = document.querySelector('.popup');
+function mafunction (){
+    div.style.display = "none";
+}
+document.querySelector(".btnpop").addEventListener('click', mafunction);
